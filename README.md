@@ -19,14 +19,16 @@ The icon font is named based on the project name specified in package.json, and 
 
 The icons are available for use either via mixin or classname.
 
-Examples:
+### Examples:
 
+**SCSS**
 ```scss
 .element:before {
     @include project-name-icon(facebook)
 }
 ```
 
+**HTML**
 ```html
 <div class="project-name-icon-twitter">Twitter</div>
 ```
@@ -34,9 +36,13 @@ Examples:
 
 ## Why use this approach?
 ✅ Helps maintain consistent, semantic markup and styling
+
 ✅ Aheres to good separation of concern between markup and stylistic elements
+
 ✅ Can be easily styled in the CSS
+
 ✅ Easier organisation of custom icons
+
 ⛔️ Inline SVG can convolute markup and make tracking icons difficult
 
 
