@@ -1,0 +1,61 @@
+// Custom icons for mixins and semantic markup
+// Based on https://github.com/endtwist/fontcustom/blob/master/lib/fontcustom/templates/fontcustom.css
+
+
+
+@font-face {
+	font-family:"custom-webfont-icons Icons";
+	src:url("../fonts/custom-webfont-icons-icons.eot?56c3100aa5eaf2851af6fd48daa3a8b4");
+	src:url("../fonts/custom-webfont-icons-icons.eot?56c3100aa5eaf2851af6fd48daa3a8b4#iefix") format("embedded-opentype"),
+		url("../fonts/custom-webfont-icons-icons.woff?56c3100aa5eaf2851af6fd48daa3a8b4") format("woff"),
+		url("../fonts/custom-webfont-icons-icons.ttf?56c3100aa5eaf2851af6fd48daa3a8b4") format("truetype");
+	font-weight:normal;
+  font-style:normal;
+}
+
+
+// Bootstrap Overrides
+%custom-webfont-icons-icon-base,
+[class^="custom-webfont-icons-icon-"]:before,
+[class*=" custom-webfont-icons-icon-"]:before {
+	font-family:"custom-webfont-icons Icons";
+	display:inline-block;
+	line-height:1;
+	font-weight:normal;
+	font-style:normal;
+	speak:none;
+	text-decoration:inherit;
+	text-transform:none;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+
+
+// Icons
+
+
+.custom-webfont-icons-icon-facebook:before {
+	content:"\f101";
+}
+
+
+
+.custom-webfont-icons-icon-twitter:before {
+	content:"\f102";
+}
+
+
+@mixin custom-webfont-icons-icon($icon) {
+
+  @extend %custom-webfont-icons-icon-base;
+
+  @if ($icon == "facebook") {
+      content:"\f101";
+  }
+  @else if ($icon == "twitter") {
+      content:"\f102";
+  }
+  
+}

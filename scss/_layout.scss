@@ -1,0 +1,26 @@
+main#main {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: $gutter * 5 0;
+}
+
+section {
+  display: block;
+  width: 100%;
+  padding: $gutter * 2 0 0 0;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding-x;
+  padding-right: $container-padding-x;
+}

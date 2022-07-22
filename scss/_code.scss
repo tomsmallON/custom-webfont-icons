@@ -1,0 +1,11 @@
+pre, code {
+  white-space: normal;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+pre {
+  margin: 0 0 $gutter * 3 0;
+  padding: 0;
+  overflow: auto;
+}
